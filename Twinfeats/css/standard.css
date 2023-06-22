@@ -1,6 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: x-large;
+    font-size: 16pt;
 }
 
 body{
@@ -13,17 +13,57 @@ nav {
     justify-content: space-evenly;
     padding: 0.25em;
     font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 a {
     color: #f0f0f0;
     text-decoration: none;
 }
 article {
-    background-image:url('../images/background.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment:fixed
+    background-attachment:fixed;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 4rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.logo {
+        width: 9ch;
+}
+
+#home {
+    background-image:url('../images/background.jpg');
+}
+.title, .logo {
+    font-family: "Indie Flower";
+    font-size: 3em;
+}
+.tagline {
+    font-style: italic;
+    font-size: 1.5em;
+}
+.photobox {
+    display: flex;
+}
+.photobox img {
+    width: 22ch;
+}
+.photobox > :last-child {
+    text-align: left;
+}
+.photobox figure {
+    font-size: .6em;
+    margin-left: 0;
+    margin-top: .3rem;
+    margin-bottom: 2em;
+
 }
