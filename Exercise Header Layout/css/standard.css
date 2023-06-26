@@ -1,0 +1,33 @@
+.header {
+    width: 700px;
+    height: 150px;
+    border:5px solid black;
+    position: relative;
+
+}
+
+.logo {
+    border: 5px solid black;
+    margin: 5px;
+    width: 45%;
+    height: 40%;
+    
+}
+.top-nav {
+    border: 5px solid black;
+    position: absolute;
+    margin: 5px;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 15%
+}
+.menu {
+    border: 5px solid black;
+    position: absolute;
+    margin: 5px;
+    width: 60%;
+    height: 25%;
+    right: 0;
+    bottom: 0;
+}
