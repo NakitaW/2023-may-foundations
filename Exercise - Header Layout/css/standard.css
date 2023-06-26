@@ -1,0 +1,16 @@
+header{
+    border-style: solid;
+    border-color: black;
+    position: relative;
+
+}
+
+.logo {
+    position: absolute; 
+}
+.top-nav {
+    position: absolute;
+}
+.menu {
+    position: absolute;
+}
