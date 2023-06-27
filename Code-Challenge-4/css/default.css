@@ -6,8 +6,10 @@ html {
 #section {
     background-repeat: no-repeat;
     background-size: contain;
+    background-attachment: fixed;
     margin: auto;
     width: 60%;
+    left: 0%;
 
 }
 
