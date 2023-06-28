@@ -95,6 +95,10 @@ article::before {
 #services > h2 {
     font-size: 1.25em;
 }
-#services > p {
+#services p, #apps p {
     text-align: left;
 }
+#apps::before {
+    background-image: url("../images/apps.jpg");
+}
+
