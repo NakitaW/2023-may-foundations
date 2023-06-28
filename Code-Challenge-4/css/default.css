@@ -1,16 +1,43 @@
 html {
-    font-family: 'Open Sans', GloriaHalleluah-Regular.ttf
+    font-family: 'Gloria_Hallelujah' open-sans;
     font-size: 16pt;
 }
+.title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Gloria_Hallelujah;
+}
 
-#section {
+body {
+    background-image: url(../images/catsdogs.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     background-attachment: fixed;
     margin: auto;
-    width: 60%;
+    width: 50%;
     left: 0%;
+    right: 0%;
+}
+nav {
+background-color: #808080;
+display: flex;
+justify-content: space-evenly;
+padding: 0.25em;
+font-size: 3vh;
+text-align: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 5;
+}
+h1 {
+font-size: 1.5rem;
+text-align: center;
+font-family: Gloria_Hallelujah;
 
 }
+
 
 
