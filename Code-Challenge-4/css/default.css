@@ -1,5 +1,6 @@
 html {
     font-family: 'Open Sans';
+    
 }
 .title {
     font-size: 3rem;
@@ -7,15 +8,15 @@ html {
     font-family: 'Gloria Hallelujah';
 }
 
-body {
+section {
     background-image: url(../images/catsdogs.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
-    margin: auto;
-    width: 100vh;
+    width: 100%;
     left: 0%;
+    height: 100vh;
     bottom: 100%;
 }
 .subtitle {
@@ -26,16 +27,19 @@ body {
 nav {
 background-color: #808080;
 display: flex;
-margin: 295pt;
 padding: 0.25em;
 text-align: center;
-justify-content: space-evenly;
+justify-content: center;
+font-size: larger;
 position: fixed;
-right: -300pt;
+bottom: 0;
 width: 100%;
 z-index: 5;
 }
-
+a{
+    color: white;
+    margin: 10px;
+}
 
 
 
