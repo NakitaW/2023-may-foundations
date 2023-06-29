@@ -1,11 +1,10 @@
 html {
-    font-family: 'Gloria_Hallelujah' open-sans;
-    font-size: 16pt;
+    font-family: 'Open Sans';
 }
 .title {
     font-size: 3rem;
     text-align: center;
-    font-family: Gloria_Hallelujah;
+    font-family: 'Gloria Hallelujah';
 }
 
 body {
@@ -15,29 +14,28 @@ body {
     background-position: center;
     background-attachment: fixed;
     margin: auto;
-    width: 50%;
+    width: 100vh;
     left: 0%;
-    right: 0%;
+    bottom: 100%;
+}
+.subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+
 }
 nav {
 background-color: #808080;
 display: flex;
-justify-content: space-evenly;
+margin: 295pt;
 padding: 0.25em;
-font-size: 3vh;
 text-align: center;
+justify-content: space-evenly;
 position: fixed;
-top: 0;
-left: 0;
+right: -300pt;
 width: 100%;
 z-index: 5;
 }
-h1 {
-font-size: 1.5rem;
-text-align: center;
-font-family: Gloria_Hallelujah;
 
-}
 
 
 
