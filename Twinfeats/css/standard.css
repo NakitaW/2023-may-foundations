@@ -101,4 +101,24 @@ article::before {
 #apps::before {
     background-image: url("../images/apps.jpg");
 }
-
+#contact::before {
+    background-image: url("../images/contactbg.jpg");
+}
+#contact img {
+    height: 1.5em;
+    vertical-align: middle;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+#contact > div {
+    display: flex;
+    flex-direction: column;
+    width: calc(2em + 12ch);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#contact a {
+    color: #303030;
+    text-decoration: underline;
+}
