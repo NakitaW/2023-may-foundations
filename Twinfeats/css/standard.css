@@ -122,3 +122,6 @@ article::before {
     color: #303030;
     text-decoration: underline;
 }
+#mobile-nav, #mobile-trigger, #bonus {
+    display: none;
+}
