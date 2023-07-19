@@ -138,3 +138,24 @@ article::before {
     text-align: left;
 
 }
+@keyframes slideInLeft {
+    from {
+        transform: translationX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+.thankyou {
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(-150px);
+
+    }
