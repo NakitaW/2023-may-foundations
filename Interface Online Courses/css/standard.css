@@ -141,7 +141,7 @@ h2 {
         height: 100%;
         z-index: -1;
         }
-        #intro {
+        #intro, .boxes {
         padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 10vw;
@@ -161,5 +161,25 @@ h2 {
         }
         .icon {
         height: 1.5em;
+        }
+        article > h2 {
+            background-color: #000060;
+            color: #ffffff;
+            margin: 0;
+            padding-top: 1em;
+        }
+        footer {
+            background-color: transparent;
+            padding: 1em;
+            margin-bottom: 1em 10vw .5em 10vw;
+            font-size: 0.8em;
+        }
+        #courses:before {
+            background-image: url("images/computer-class.jpg");
+            background-position: center top;
+        }
+        #about:before{
+            background-image: url("images/kent-teaching.jpg");
+            background-position: center top;
         }
         
