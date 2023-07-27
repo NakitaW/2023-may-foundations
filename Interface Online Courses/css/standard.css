@@ -167,6 +167,7 @@ h2 {
             color: #ffffff;
             margin: 0;
             padding-top: 1em;
+            padding-bottom: 1em
         }
         footer {
             background-color: transparent;
@@ -182,4 +183,18 @@ h2 {
             background-image: url("images/kent-teaching.jpg");
             background-position: center top;
         }
+        .box {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            margin-left: 7vw;
+            margin-right: 7w;
+            background-color: white;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-bottom: 1em;
+        }
+
         

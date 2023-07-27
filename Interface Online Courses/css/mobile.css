@@ -38,3 +38,8 @@
     min-width: 80vw;
     max-width: 80vw;
     }
+    .box {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin: 0;
+    }
