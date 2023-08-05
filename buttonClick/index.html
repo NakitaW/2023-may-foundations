@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttonClick</title>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#clicker").click(buttonClicked);
+            function buttonClicked() {
+            $("body").append("<p>Button was clicked!</p>");
+        }
+        });
+    </script>
+</head>
+<body>
+    <button id="clicker"> clickme</button>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis ducimus sint, magnam totam maiores reprehenderit ut deserunt? Eum veniam est architecto provident maxime perspiciatis voluptas beatae harum eveniet ipsum?</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ipsum ab unde, eaque, ut corporis exercitationem blanditiis delectus assumenda aliquid expedita harum reiciendis maiores voluptate, doloremque modi aperiam eveniet ullam!</p>
+    <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nesciunt maiores sed, aspernatur dolore temporibus amet at nulla cupiditate deleniti possimus reiciendis eligendi repellendus consequatur exercitationem. Saepe itaque maiores rerum!</section>
+</body>
+</html>
