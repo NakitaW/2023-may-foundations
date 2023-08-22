@@ -24,26 +24,82 @@ body {
     margin: 0;
     padding: 0;
     }
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+@media (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 2;
+        }
+    }
+
+    /* navbar links */
+    nav a {
+        text-decoration: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-left: 1px solid gray;
+        text-align: center;
+        color: #EADDCA;
+        transition: color .5s;
+        /* margin: 0 10px; */
+        }
+    nav a:hover {
+        color: black;
+        text-shadow: 1px 1px 2px #808080;
+    }
+    nav > a:first-child {
+        border-left: 0;
+    }
+    nav > a {
+        border: 0;
+        padding: .5em;
+        }
+    nav > div {
+        margin-top: 1em;
+    } 
+
+    @media screen and (min-width: 800px) {
+
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 
 
 /* Header/logo Title */
 header {
-    /* position: relative; */
-    margin-top: 3em;
-    height: auto;
+    position: relative;
+    margin-top: 1em;
+    height: 50vh;
     color: white;
     display: flex;
     justify-content: center;
-    padding-top: 2em;
-}
+    padding: 10px;
+    }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ysabeau Office', 'cursive';
     text-align: center;
-    position: relative;
     font-size: 20px;
-    /* overflow-x: hidden; */
+   
 }
 h1 {
     font-family: 'Ysabeau Office', sans-serif;
@@ -52,20 +108,24 @@ h1 {
 
 /* Slideshow */
 .slideshow-images {
-    position: absolute;
+    position:absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 60%;
+    height: 40vh; /* Use vh units */
     z-index: -1;
     background-color: black;
+    overflow: hidden;
+    border: 5px solid #702963;
 }
 
 .slideshow-images:after {
     content: "";
     position: absolute;
-    left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: gray;
@@ -77,8 +137,8 @@ h1 {
     top: 0;
     left: 0;
     opacity: 0;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     animation: slideshow 24s linear infinite;
 }
@@ -106,95 +166,40 @@ h1 {
     100% {opacity: 0;}
 }
 
-header > .content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-} 
-nav {
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    z-index: 2;
-    } 
-/* navbar links */
-a {
-    color: #EADDCA;
-    text-decoration: underline;
-}
-nav a {
-    text-decoration: none;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-left: 1px solid gray;
-    text-align: center;
-    color: #EADDCA;
-    transition: color .5s;
-    }
-nav a:hover {
-    color: black;
-    text-shadow: 1px 1px 2px #808080;
-}
-nav > a:first-child {
-    border-left: 0;
-}
-nav > a {
-    border: 0;
-    padding: .5em;
-    }
-nav > div {
-    margin-top: 1em;
-} 
-h2 {
-text-align: center;
-width: 1200px;
-border: 5px;
-color: #EADDCA;
-}
-
-/* About Me Box */
+/* heading boxes */
 .title1, .title2, .title3, .title4 {
-text-align: center;
-margin-top: 5%;
-margin-left: 2%;
-width: 1200px;
-background-color: gray;
-border: 5px solid black;
-color: #EADDCA;
-padding: 10px;
-}
-
-/* Image */
-.myphoto {
-    margin-right:25px;
-    margin-top: -60%;
-    background-color: gray;
-    border: 5px solid black;
-    color: #EADDCA;
-    /* padding: 10px; */
-    margin-left: 60%;
-    width: 35%;
-    height: 500px;
-}
+    background-color: #702963;
+    color: #eaddca;
+    padding: 10px;
+    margin-top: -2%;
+    height: 30%;
+    text-align: center;
+    margin-right: -10%;
+    width: 100%;
+    } 
+ 
 .paragraph1{
-    margin-left:25px;
-    margin-top: 10px;
+    margin-left:5%;
+    margin-top: -28%;
     background-color: gray;
     border: 5px solid black;
     color: #EADDCA;
     padding: 10px;
-    margin-right: 10px;
-    width: 600px;
-    height: 500px;
+    margin-right: 20px;
+    width: 60%;
+    height: 350px
+} 
+
+.kiden{
+
+    width: 285px;
+    height: 338px;
+    margin-left: 67%;
+    margin-top: 7.9%;
+    
 }
+
+
 .paragraph2{
     margin-top: 10%;
     margin-left: 5%;
@@ -321,6 +326,8 @@ input[type="radio"] {
 
 /* Basic styling for the footer */
 .footer {
+    display: flex;
+    flex-direction: column;
     color: #fff;
     padding: 2px;
     text-align: center;
@@ -334,7 +341,7 @@ input[type="radio"] {
   }
   
   /* Adjustments for smaller screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .footer {
       padding: 10px;
     }
@@ -353,9 +360,7 @@ input[type="radio"] {
     margin: 0 auto;
     max-width: 100%;
   }
-  @media screen and (max-width: 768px){
 
-  }
   
   /* Styling for form elements */
   #email {
@@ -381,18 +386,3 @@ input[type="radio"] {
     font-size: 75%;
   }
 
-  @media only screen and (max-width: 600px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-    }
-    .social-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-  }
